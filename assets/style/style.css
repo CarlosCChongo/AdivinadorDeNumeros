@@ -1,0 +1,9 @@
+body {
+    background-image: url('../img/hollow-fondodepantalla.jpg'); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Establece la altura del cuerpo igual a la altura de la ventana del navegador */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina tu numero</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col text-center text-light ">
+        <h1 class="game-title" id="titleGame">¿Quieres Jugar un juego?</h1>
+        <button id="BtnSI" class="btn btn-primary mt-3"> ¡Sí! </button>
+        <button id="BtnNO" class="btn btn-primary mt-3"> ¡No! </button>
+        
+        <div id="gameContainer" class="mt-2 d-none">
+          <h1 id="texto1">Piensa en un número del 1 al 100.</h1>
+          
+          <h4 id="texto2">Cuando estes listo, presiona el boton de abajo</h4>
+            <div id="Botones">
+          <button id="BtnStart" class="btn btn-success">¿Empezamos?</button>
+            </div>
+            <div id="gameContainer2" class="mt-2 d-none">
+                <button id="BtnStart" class="btn btn-info" onclick="AdivinadorMenor()">es menor</button>
+                <button id="BtnStart" class="btn btn-success" onclick="NumeroElegido()">!!SI!!</button>
+                <button id="BtnStart" class="btn btn-danger" onclick="AdivinadorMayor()">es mayor</button>
+            </div>
+            <div id="gameContainer3" class="mt-2 d-none">
+                <button id="BtnStart" class="btn btn-info" onclick="reiniciarPagina()">Reiniciar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/javascript/seleccionador.js"></script>
+</body>
+</html>
